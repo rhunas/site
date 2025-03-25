@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: white;
+        }
+        .header {
+            width: 350px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .heart {
+            font-size: 24px;
+            color: black;
+        }
+        .stories {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .story {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid gold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: lightgray;
+        }
+        .story.small {
+            width: 30px;
+            height: 30px;
+        }
+        .separator {
+            width: 350px;
+            height: 1px;
+            background: black;
+            margin: 10px 0;
+        }
+        .post-container {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .post-actions {
+            width: 350px;
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+        .post-actions span {
+            font-size: 24px;
+            color: black;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            width: 350px;
+            position: fixed;
+            bottom: 20px;
+            background: white;
+            padding: 10px 0;
+        }
+        .navbar span {
+            font-size: 28px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span>instagram</span>
+        <span class="heart">❤️</span>
+    </div>
+    <div class="stories">
+        <div class="story"></div>
+        <div class="story"></div>
+        <div class="story"></div>
+        <div class="story"></div>
+        <div class="story small"></div>
+    </div>
+    <div class="separator"></div>
+    <div class="post-container"></div>
+    <div class="separator"></div>
+    <div class="post-actions">
+        <span>❤️</span>
+        <span>💬</span>
+        <span>📩</span>
+        <span>🔖</span>
+    </div>
+    <div class="separator"></div>
+    <div class="navbar">
+        <span>🏠</span>
+        <span>🔍</span>
+        <span>➕</span>
+        <span>▶️</span>
+        <span>👤</span>
+    </div>
+</body>
+</html>
